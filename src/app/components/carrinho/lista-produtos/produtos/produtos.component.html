@@ -1,0 +1,19 @@
+<div class="card mb-4 shadow-sm">
+    <img class="bd-placeholder-img card-img-top p-2" width="100%"[src]="productItem.imagemUrl"/> 
+      <!-- Link para caso não funcione: -->
+      <!-- https://orca.com.br/uploads/products/versions/colors/chevrolet-branco-summit-novo-onix.png -->
+    <div class="card-body">
+      <p class="card-text">
+        <strong>{{ productItem.price | currency:'BRL' }}</strong> <!--Valor dos cartões-->
+      </p>
+      <!--Texto dos cartões de lista-->
+      <p class="card-text">{{ productItem.description }}</p>
+      <!--<p class="card-text">Com o novo Onix 1.0 de 2021 você terá mais segurança desde a primeira versão para você e sua familia.</p> -->
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-primary produtos-btn"(click)="colocarNoCarrinho()">Adicionar ao carrinho</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary produtos-btn"><em>Ver detalhes</em></button>
+        </div>
+      </div>
+    </div>
+  </div>

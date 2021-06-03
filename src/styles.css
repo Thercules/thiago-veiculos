@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+
+.btn-1{
+    font-family: var(--font-action);
+    width: 130px;
+    height: 38px;
+    border: none; 
+    color: black; 
+    background-color: rgb(255,0,68);
+    cursor: pointer;
+    opacity: 0;
+    animation: moveButton 1s 0.9s forwards;
+}
+
+@keyframes moveButton {
+    0% {
+      transform: translateY(10rem) rotateY(-30deg);
+    }
+    100% {
+      transform: translateY(0) rotateY(0);
+      opacity: 1;
+    }
+  }
+
+.carrinho-c-item {
+    font-size: small;
+}
+.filtros {
+    font-size: medium;
+} 
+
+.card, .form-control, .btn {
+    border-radius: 0;
+}
+
+.list-group-item:first-child{
+    font-size: smaller;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child{
+    font-size: smaller;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+} 
+
+.produtos-btn {
+    font-size: smaller;
+}

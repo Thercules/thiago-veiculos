@@ -1,0 +1,10 @@
+<div *ngIf="itensDoCarrinho.length === 0" class="alerta alerta-info">Carrinho vazio.</div> <!--Declaração de alerta-->
+<ul *ngIf="itensDoCarrinho.length > 0" class="list-group">
+    <li class="list-group-item" *ngFor="let item of itensDoCarrinho"> <!--Declaração do número de itens presente no carinho-->
+        <app-carrinho-c-item [itensDoCarrinho]="item"></app-carrinho-c-item>
+    </li>
+    <li class="list-group-item active">
+        <!--Valor total dos itens adicionados ao carrinho-->
+        <strong>Total:</strong>  {{ carrinhoTotal | currency:'BRL' }} 
+    </li>
+</ul>
